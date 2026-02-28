@@ -89,7 +89,7 @@ _**Pruebas de API:** Postman._
 
 ## Diagrama de clases del Dominio (v1)
 
-![Diagrama de Dominio v1](c:\Users\Marcela\Desktop\TERCER SEMESTRE\BACKEN 2\diagrama-dominio-v1.png)
+![Diagrama de Dominio v1](diagrama-dominio-v1.png)
 
 
 ## Instrucciones de Instalación y Ejecución 
