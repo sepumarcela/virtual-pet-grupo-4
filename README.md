@@ -32,32 +32,32 @@ OE5 – Validar y documentar los endpoints de la aplicación para asegurar su co
 
 **¿Qué se va a desarrollar?**
 
-_*Desarrollo del backend de la tienda virtual utilizando Spring Boot._
+*Desarrollo del backend de la tienda virtual utilizando Spring Boot.
 
-_*Gestión del proyecto y sus dependencias mediante Maven._
+*Gestión del proyecto y sus dependencias mediante Maven.
 
-_*Implementación de funcionalidades básicas para administrar productos (crear, listar, actualizar y eliminar alimentos, accesorios y medicamentos)._
+*Implementación de funcionalidades básicas para administrar productos (crear, listar, actualizar y eliminar alimentos, accesorios y medicamentos).
 
-_*Conexión a una base de datos para almacenar la información de los productos._
+*Conexión a una base de datos para almacenar la información de los productos.
 
-_*Desarrollo de un frontend en React (en el marco de otra asignatura) que permitirá a los usuarios visualizar los productos y realizar compras._
+*Desarrollo de un frontend en React (en el marco de otra asignatura) que permitirá a los usuarios visualizar los productos y realizar compras.
 
-_*Integración de una pasarela de pagos en modo de prueba (sandbox) para simular el proceso de compra dentro de la tienda virtual._
+*Integración de una pasarela de pagos en modo de prueba (sandbox) para simular el proceso de compra dentro de la tienda virtual.
 
-_*Comunicación entre el frontend y el backend mediante servicios web (API REST)._
+*Comunicación entre el frontend y el backend mediante servicios web (API REST).
 
 
 **¿Qué NO se va a desarrollar en esta versión (fuera de alcance)?**
 
-_*Aplicación móvil para dispositivos Android o iOS._
+*Aplicación móvil para dispositivos Android o iOS.
 
-_*Implementación de múltiples servicios independientes (microservicios)._
+*Implementación de múltiples servicios independientes (microservicios).
 
-_*Integración con empresas reales de envíos o seguimiento de paquetes._
+*Integración con empresas reales de envíos o seguimiento de paquetes.
 
-_*Despliegue en servidores empresariales o infraestructura avanzada en la nube._
+*Despliegue en servidores empresariales o infraestructura avanzada en la nube.
 
-_*Sistema de seguridad avanzado con configuraciones empresariales complejas.*
+*Sistema de seguridad avanzado con configuraciones empresariales complejas.
 
 ## Tecnologías y Herramientas (Tech Stack)
 
@@ -71,7 +71,7 @@ _*Sistema de seguridad avanzado con configuraciones empresariales complejas.*
 
 **Gestión de dependencias y construcción:** Maven.
 
-_*Control de versiones:** Git y GitHub.
+**Control de versiones:** Git y GitHub.
 
 **Pruebas de API:** Postman.
 
