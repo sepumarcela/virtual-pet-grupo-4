@@ -14,21 +14,21 @@ _Virtual Pet se desarrolla dentro del dominio del comercio electrónico (e-comme
 
 **Objetivo general**
 
-_Desarrollar una tienda virtual para mascotas utilizando Spring Boot y Maven que permita gestionar y comercializar productos de manera eficiente, segura y estructurada._
+Desarrollar una tienda virtual para mascotas utilizando Spring Boot y Maven que permita gestionar y comercializar productos de manera eficiente, segura y estructurada.
 
 **Objetivos específicos**
 
-_1.Diseñar e implementar la arquitectura backend del sistema utilizando Spring Boot bajo el patrón de capas (controlador, servicio y repositorio)._
+OE1 – Diseñar e implementar la arquitectura backend del sistema utilizando Spring Boot bajo el patrón de capas (controlador, servicio y repositorio).
 
-_2.Configurar y gestionar las dependencias del proyecto mediante Maven para garantizar una estructura organizada y mantenible._
+OE2 – Configurar y gestionar las dependencias del proyecto mediante Maven para garantizar una estructura organizada y mantenible.
 
-_3.Implementar funcionalidades CRUD para la administración de productos (alimentos, accesorios y medicamentos)._
+OE3 – Implementar funcionalidades CRUD para la administración de productos (alimentos, accesorios y medicamentos).
 
-_4.Integrar una base de datos para el almacenamiento y consulta persistente de la información de productos._
+OE4 – Integrar una base de datos para el almacenamiento y consulta persistente de la información de productos.
 
-_5.Validar y documentar los endpoints de la aplicación para asegurar su correcto funcionamiento y facilitar futuras integraciones._
+OE5 – Validar y documentar los endpoints de la aplicación para asegurar su correcto funcionamiento y facilitar futuras integraciones.
 
-## Alcance del proyecton (Scope)
+## Alcance del proyecto (Scope)
 
 **¿Qué se va a desarrollar?**
 
@@ -61,20 +61,19 @@ _*Sistema de seguridad avanzado con configuraciones empresariales complejas.*
 
 ## Tecnologías y Herramientas (Tech Stack)
 
-_**Backend:** Spring Boot (versión 3.x), Java 17, Spring Data JPA._
+*Backend:* Spring Boot (versión 3.x), Java 17, Spring Data JPA, integración con base de datos PostgreSQL y H2.
 
-_**Frontend:** React (desarrollado en el marco de otra asignatura para consumir la API REST del backend)._
+*Frontend:* React (desarrollado en el marco de otra asignatura para consumir la API REST del backend).
 
-_**Base de datos:** H2 para pruebas en entorno de desarrollo y PostgreSQL para almacenamiento persistente._
-
+*Base de datos:* H2 para pruebas en entorno de desarrollo y PostgreSQL para almacenamiento persistente.
 
 **OTRAS HERRAMIENTAS**
 
-_**Gestión de dependencias y construcción:** Maven._
+**Gestión de dependencias y construcción:** Maven.
 
-_**Control de versiones:** Git y GitHub._
+_*Control de versiones:** Git y GitHub.
 
-_**Pruebas de API:** Postman._
+**Pruebas de API:** Postman.
 
 
 
@@ -89,10 +88,12 @@ _**Pruebas de API:** Postman._
 
 ## Diagrama de clases del Dominio (v1)
 
-![Diagrama de Dominio v1](diagrama-dominio-v1.png)
+![Diagrama de Dominio v1](docs/diagrama-dominio-v1.png)
+
+*Diagrama inicial del modelo de dominio – versión 1. Se actualizará en futuras entregas.*
 
 
-## Instrucciones de Instalación y Ejecución 
+## Instrucciones de Instalación y Ejecución (para desarrolladores)
 
 1. clonar el repositorio
 
@@ -103,3 +104,27 @@ git clone https://github.com/sepumarcela/virtual-pet-grupo-4.git
 
 cd virtual-pet-grupo-4
 
+3.Configurar con base de datos en H2
+
+spring.datasource.url=jdbc:h2:mem:testdb
+spring.datasource.driverClassName=org.h2.Driver
+spring.datasource.username=sa
+spring.datasource.password=
+spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
+spring.h2.console.enabled=true
+spring.jpa.hibernate.ddl-auto=update
+
+
+PostgreSQL
+
+spring.datasource.url=jdbc:postgresql://localhost:5432/[nombre_bd]
+spring.datasource.username=[usuario]
+spring.datasource.password=[contraseña]
+spring.jpa.hibernate.ddl-auto=update
+
+
+4. Ejecutar la aplicación
+
+./mvnw spring-boot:run
+
+O desde IDE: Run → [virtual-pet-grupo-4]Application
