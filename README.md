@@ -96,15 +96,22 @@ OE5 – Validar y documentar los endpoints de la aplicación para asegurar su co
 ## Instrucciones de Instalación y Ejecución (para desarrolladores)
 
 1. Clonar el repositorio
+
 ```bash
 git clone https://github.com/sepumarcela/virtual-pet-grupo-4.git
+```
 
 2. Entrar al directorio
 
+```bash
 cd virtual-pet-grupo-4
+```
 
-3.Configurar con base de datos en src/main/resources/application.properties
+3. Configurar base de datos en `src/main/resources/application-dev.properties`
 
+Ejemplo con H2 (para pruebas rápidas):
+
+```properties
 spring.datasource.url=jdbc:h2:mem:testdb
 spring.datasource.driverClassName=org.h2.Driver
 spring.datasource.username=sa
@@ -112,17 +119,23 @@ spring.datasource.password=
 spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
 spring.h2.console.enabled=true
 spring.jpa.hibernate.ddl-auto=update
+```
 
-PostgreSQL
+Ejemplo con PostgreSQL:
 
+```properties
 spring.datasource.url=jdbc:postgresql://localhost:5432/[nombre_bd]
 spring.datasource.username=[usuario]
 spring.datasource.password=[contraseña]
 spring.jpa.hibernate.ddl-auto=update
-
+```
 
 4. Ejecutar la aplicación
 
+```bash
 ./mvnw spring-boot:run
+```
 
-O desde IDE: Run → [virtual-pet-grupo-4]Application
+O desde IDE:
+
+Run → VirtualPetApplication
